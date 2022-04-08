@@ -21,5 +21,8 @@ class Winner {
       return "Loose";
     }
   }
+  drawResult(result) {
+    console.log(result === "Draw" ? "Draw" : `You ${result}!`);
+  }
 }
 exports.Winner = Winner;

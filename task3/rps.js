@@ -65,7 +65,7 @@ function moveHandling(move) {
   } else {
     const winner = new Winner.Winner(elements);
     console.log(`Your move: ${elements[move - 1]}`);
-    console.log(winner.getWinner(elements[move - 1], computerMove));
+    winner.drawResult(winner.getWinner(elements[move - 1], computerMove));
     console.log(`Computer move: ${computerMove}`);
     console.log(`HMAC key: ${Crypto.key.key}`);
     process.exit();

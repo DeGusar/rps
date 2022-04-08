@@ -1,5 +1,5 @@
 const Winner = require("./Winner");
-const { printTable, Table } = require("console-table-printer");
+const { Table } = require("console-table-printer");
 
 class Help {
   constructor(array) {
